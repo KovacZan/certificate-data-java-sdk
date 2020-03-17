@@ -1,6 +1,7 @@
 import com.google.gson.internal.LinkedTreeMap;
 import org.arkecosystem.client.Connection;
 import org.arkecosystem.crypto.configuration.Network;
+import org.arkecosystem.crypto.encoding.Hex;
 import org.arkecosystem.crypto.identities.Address;
 import org.arkecosystem.crypto.networks.Testnet;
 import org.arkecosystem.crypto.transactions.Serializer;
@@ -34,7 +35,6 @@ public class Main {
                 .certifiedDataAsset("certified data")
                 .sign("clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire")
                 .transaction;
-//        System.out.println(Arrays.toString(Serializer.serialize(transaction)));
 
         payload.add(transaction.toHashMap());
         LinkedTreeMap<String, Object> postResponse = connection2.api().transactions.create(payload);

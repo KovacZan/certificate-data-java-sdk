@@ -30,7 +30,7 @@ public class CertificateManager extends Transaction {
         String certificateData = (String) this.asset.customAsset.get("certifiedData");
         byte[] certificateDataBuffer = certificateData.getBytes();
 
-        ByteBuffer buffer = ByteBuffer.allocate(6 + certificateDataBuffer.length);
+        ByteBuffer buffer = ByteBuffer.allocate(2 + certificateDataBuffer.length);
         buffer.order(ByteOrder.LITTLE_ENDIAN);
 
         buffer.putShort((short) certificateDataBuffer.length);
