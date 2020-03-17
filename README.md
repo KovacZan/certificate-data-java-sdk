@@ -11,3 +11,8 @@ Transaction transaction = new CertificateManagerBuilder()
                 .sign("clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire")
                 .transaction;
 ```
+
+### Run main class
+To execute the following transaction run:
+ 
+ `gradle certificateManager`
