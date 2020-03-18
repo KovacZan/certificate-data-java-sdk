@@ -8,7 +8,7 @@ public class CertificateManager extends Transaction {
 
     @Override
     public int getTransactionType() {
-        return 0;
+        return BCDiplomaTransactionTypes.CERTIFICATE_MANAGER.getValue();
     }
 
     @Override
