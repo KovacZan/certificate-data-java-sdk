@@ -1,5 +1,5 @@
 public enum BCDiplomaTransactionTypes {
-    CERTIFICATE_MANAGER(0);
+    CERTIFICATE_DATA(0);
 
     private final int value;
 

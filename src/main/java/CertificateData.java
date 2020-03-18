@@ -4,11 +4,11 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.HashMap;
 
-public class CertificateManager extends Transaction {
+public class CertificateData extends Transaction {
 
     @Override
     public int getTransactionType() {
-        return BCDiplomaTransactionTypes.CERTIFICATE_MANAGER.getValue();
+        return BCDiplomaTransactionTypes.CERTIFICATE_DATA.getValue();
     }
 
     @Override
