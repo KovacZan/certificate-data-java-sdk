@@ -20,9 +20,9 @@ public class Main {
         map.put("host", "http://49.12.15.12:4003/api/");
         map.put("content-type","application/json");
 
-        Connection connection2 = new Connection(map);
+        Connection connection = new Connection(map);
 
-        long nonce = getNonce(connection2, Address.fromPassphrase("allow unveil slide steak glimpse long hurt trend acid stereo equip clump")) + 1;
+        long nonce = getNonce(connection, Address.fromPassphrase("allow unveil slide steak glimpse long hurt trend acid stereo equip clump")) + 1;
 
         ArrayList<HashMap> payload = new ArrayList<>();
 
@@ -33,7 +33,7 @@ public class Main {
                 .transaction;
 
         payload.add(transaction.toHashMap());
-        LinkedTreeMap<String, Object> postResponse = connection2.api().transactions.create(payload);
+        LinkedTreeMap<String, Object> postResponse = connection.api().transactions.create(payload);
         System.out.println(postResponse);
     }
 }
