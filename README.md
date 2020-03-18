@@ -1,4 +1,5 @@
 # certificate-manager-java-sdk
+![](https://raw.githubusercontent.com/KovacZan/certificate-manager-java-sdk/master/bcdiploma-1021x400.jpg)
 
 > Certificate manager transaction using java sdk
 
